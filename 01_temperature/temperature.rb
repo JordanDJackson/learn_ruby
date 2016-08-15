@@ -7,7 +7,6 @@ def ctof temp
 	end
 end
 
-
 def ftoc temp 
 	((temp - 32.0) / 1.8).ceil
 end
