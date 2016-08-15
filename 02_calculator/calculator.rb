@@ -24,3 +24,21 @@ def multiply (*args)
 
 
 end
+
+def power x,y
+	expo = 1
+	y.times {expo = x * expo}
+	return expo
+end
+fact = 1
+def factorial x
+	if x > 1
+	fact = fact * (x)
+	factorial(x-1)
+	elsif x == 0 || x==1
+		return x
+	else
+		return fact
+	end
+
+end
