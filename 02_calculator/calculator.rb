@@ -32,13 +32,10 @@ def power x,y
 end
 fact = 1
 def factorial x
-	if x > 1
-	fact = fact * (x)
-	factorial(x-1)
-	elsif x == 0 || x==1
+	if x == 0 || x==1
 		return x
 	else
-		return fact
+		x * factorial(x-1)
 	end
 
 end
