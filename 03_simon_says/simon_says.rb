@@ -30,7 +30,13 @@ def titleize x
 	if arr.length <= 1
 		x.capitalize
 	else
-		x.split.map(&:capitalize).join(' ')
+		arr.each do |word|
+			if (word != "and") && (word != "the") && (word != "over")
+				word.capitalize!
+			end
+		end
+		arr[0].capitalize!
+		arr.join(" ")
 	end
 
 
